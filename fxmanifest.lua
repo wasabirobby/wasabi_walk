@@ -8,6 +8,10 @@ description 'ESX persistent walking style'
 
 version '1.0.0'
 
+files {
+  'data.json'
+}
+
 shared_script 'config.lua'
 
 client_script 'client/client.lua'
