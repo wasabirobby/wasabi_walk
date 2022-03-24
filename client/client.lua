@@ -19,6 +19,9 @@ AddEventHandler('esx:onPlayerSpawn', function()
     loadPlayerWalk()
 end)
 
+AddEventHandler('playerSpawned', function() --Maybe fix for some?
+	loadPlayerWalk()
+end)
 
 RegisterNetEvent('wasabi_walk:setWalk')
 AddEventHandler('wasabi_walk:setWalk', function(style)
