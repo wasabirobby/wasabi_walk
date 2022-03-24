@@ -5,6 +5,10 @@ CreateThread(function()
         TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
         Wait(0)
     end
+    while ESX.GetPlayerData().job == nil do
+        Wait(1000)
+    end
+    loadPlayerWalk()
     TriggerEvent('chat:addSuggestion', '/'..Config.saveCommand, 'Set a walking style to save.', {{ name='style', help='Use command /'..Config.walkListCommand..' for a list of walking styles.'}})
     TriggerEvent('chat:addSuggestion', '/'..Config.walkListCommand, 'List of avaliable walking styles.')
 end)
