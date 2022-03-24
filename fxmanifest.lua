@@ -4,12 +4,12 @@ game 'gta5'
 
 author 'wasabirobby#5110'
 
-description 'ESX persistent walking style'
+description 'ESX persistent walking style script'
 
 version '1.0.0'
 
 files {
-  'data.json'
+    'data.json'
 }
 
 shared_script 'config.lua'
